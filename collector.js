@@ -1,28 +1,59 @@
 // collector.js
-const fs = require('fs');
-const path = require('path');
 const ccxt = require('ccxt');
 const sqlite3 = require('sqlite3').verbose();
+const fs = require('fs');
 
-const perpList = require('./perp-list'); // static base symbols array
-const symbolsDynamicPath = path.join(__dirname, 'symbols-dynamic.json');
-if (!fs.existsSync(symbolsDynamicPath)) {
-  console.error('symbols-dynamic.json missing. Run: node generate-symbols.js');
+// Database connection
+const db = new sqlite3.Database('./fade.db');
+
+// Load symbols and perp list
+let symbolsDynamic = {};
+let perpList = [];
+
+try {
+  symbolsDynamic = JSON.parse(fs.readFileSync('./symbols-dynamic.json', 'utf8'));
+  console.log('[SYMBOLS] Loaded symbols-dynamic.json');
+} catch (e) {
+  console.error('[ERR] Failed to load symbols-dynamic.json:', e.message);
+  console.log('[INFO] Run: node generate-symbols.js first');
   process.exit(1);
 }
-const symbolsDynamic = JSON.parse(fs.readFileSync(symbolsDynamicPath, 'utf8'));
 
-const DB_FILE = path.join(__dirname, 'fade.db');
-const db = new sqlite3.Database(DB_FILE);
+try {
+  const perpListData = require('./perp-list.js');
+  perpList = perpListData.perpList || perpListData || [];
+  console.log(`[PERP-LIST] Loaded ${perpList.length} base symbols`);
+} catch (e) {
+  console.error('[ERR] Failed to load perp-list.js:', e.message);
+  process.exit(1);
+}
 
-// CONFIG
-const BINANCE = new ccxt.binance({ enableRateLimit: true, options: { defaultType: 'future' } });
+// Exchange configurations
 const EXCHANGES = {
-  binance: BINANCE,
-  bybit: new ccxt.bybit({ enableRateLimit: true, options: { defaultType: 'future' } }),
-  okx: new ccxt.okx({ enableRateLimit: true, options: { defaultType: 'future' } }),
-  hyperliquid: new ccxt.hyperliquid ? new ccxt.hyperliquid({ enableRateLimit: true }) : null,
-  coinbase: new ccxt.coinbasepro ? new ccxt.coinbasepro({ enableRateLimit: true }) : null
+  binance: new ccxt.binance({ 
+    enableRateLimit: true, 
+    options: { 
+      defaultType: 'future' // Essential for futures/perp data
+    } 
+  }),
+  bybit: new ccxt.bybit({ 
+    enableRateLimit: true,
+    options: { 
+      defaultType: 'swap' // Bybit uses 'swap' for perps
+    }
+  }),
+  okx: new ccxt.okx({ 
+    enableRateLimit: true,
+    options: { 
+      defaultType: 'swap' // OKX perps are 'swap' type
+    }
+  }),
+  hyperliquid: new ccxt.hyperliquid({ 
+    enableRateLimit: true 
+    // Hyperliquid is perps-only, no need to set type
+  })
+  // Comment out coinbase for now - limited perp support
+  // coinbase: new ccxt.coinbase({ enableRateLimit: true })
 };
 
 const POLL_INTERVAL_MIN = 5;
@@ -55,7 +86,7 @@ function getLastTsForSymbolBase(base) {
 async function backfillBinanceFor(base, apiSymbol) {
   if (!apiSymbol) return;
   console.log(`[BACKFILL] start ${base} (${apiSymbol})`);
-  const ex = BINANCE;
+  const ex = EXCHANGES.binance;
   // find since = lastTs or 10 days ago
   let lastTs = await getLastTsForSymbolBase(base);
   if (!lastTs) {
