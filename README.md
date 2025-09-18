@@ -6,7 +6,7 @@
 ## Core Concept
 - **Wick Zones**: Sudden price spikes/drops caused by liquidation clusters, stop-loss cascades, and orderbook imbalances
 - **Prediction Window**: 5-30 minutes advance warning on 1-minute and 5-minute charts
-- **Target**: 50+ perpetual tokens across major exchanges (Binance, Bybit, OKX, Hyperliquid)
+- **Target**: 50+ perpetual tokens across major exchanges (Binance, Bybit, OKX, Hyperliquid, Coinbase)
 - **AI Integration**: Dynamic algorithm optimization via OpenAI/Claude/Mistral APIs
 
 ## Architecture
@@ -47,10 +47,10 @@ FadeMoe3/
 │   ├── index.html            # Main dashboard (dark/purple theme)
 │   └── alert-cards.js        # Alert display components
 ├── archive/                   # Historical configs and backups
-├── 10dayPerps.db             # SQLite database (10-day rolling)
+├── fade.db             # SQLite database (10-day rolling)
 ├── server.js                 # Express web server
 ├── core-trader.js            # Main alert engine
-├── ccxt-apis.js              # Exchange API handlers
+├── collector.js              # Exchange API handler
 ├── perp-list.js              # 50-token configuration
 ├── backtester.js             # AI integration module
 ├── core-config.json          # Dynamic algorithm parameters

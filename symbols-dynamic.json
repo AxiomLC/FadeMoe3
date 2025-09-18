@@ -1,0 +1,345 @@
+{
+  "BTC": {
+    "binance": "BTC/USDT:USDT",
+    "bybit": "BTC/USDC:USDC-251226",
+    "okx": "BTC/USDT:USDT-250919",
+    "hyperliquid": "BTC/USDC:USDC",
+    "coinbase": "BTC/USDC:USDC"
+  },
+  "ETH": {
+    "binance": "ETH/USDT:USDT",
+    "bybit": "ETH/USDC:USDC-251226",
+    "okx": "ETH/USDT:USDT-250919",
+    "hyperliquid": "ETH/USDC:USDC",
+    "coinbase": "ETH/USDC:USDC"
+  },
+  "BNB": {
+    "binance": "BNB/USDT:USDT",
+    "bybit": "BNB/USDC:USDC",
+    "okx": "BNB/USDT:USDT",
+    "hyperliquid": "BNB/USDC:USDC",
+    "coinbase": "BNB/USDC:USDC"
+  },
+  "SOL": {
+    "binance": "SOL/USDT:USDT",
+    "bybit": "SOL/USDC:USDC",
+    "okx": "SOL/USDT:USDT",
+    "hyperliquid": "SOL/USDC:USDC",
+    "coinbase": "SOL/USDC:USDC"
+  },
+  "XRP": {
+    "binance": "XRP/USDT:USDT",
+    "bybit": "XRP/USDC:USDC",
+    "okx": "XRP/USDT:USDT",
+    "hyperliquid": "XRP/USDC:USDC",
+    "coinbase": "XRP/USDC:USDC"
+  },
+  "ADA": {
+    "binance": "ADA/USDT:USDT",
+    "bybit": "ADA/USDT:USDT",
+    "okx": "ADA/USDT:USDT",
+    "hyperliquid": "ADA/USDC:USDC",
+    "coinbase": "ADA/USDC:USDC"
+  },
+  "AVAX": {
+    "binance": "AVAX/USDT:USDT",
+    "bybit": "AVAX/USDT:USDT",
+    "okx": "AVAX/USDT:USDT",
+    "hyperliquid": "AVAX/USDC:USDC",
+    "coinbase": "AVAX/USDC:USDC"
+  },
+  "DOT": {
+    "binance": "DOT/USDT:USDT",
+    "bybit": "DOT/USDC:USDC",
+    "okx": "DOT/USDT:USDT",
+    "hyperliquid": "DOT/USDC:USDC",
+    "coinbase": "DOT/USDC:USDC"
+  },
+  "LTC": {
+    "binance": "LTC/USDT:USDT",
+    "bybit": "LTC/USDC:USDC",
+    "okx": "LTC/USDT:USDT",
+    "hyperliquid": "LTC/USDC:USDC",
+    "coinbase": "LTC/USDC:USDC"
+  },
+  "TRX": {
+    "binance": "TRX/USDT:USDT",
+    "bybit": "TRX/USDT:USDT",
+    "okx": "TRX/USDT:USDT",
+    "hyperliquid": "TRX/USDC:USDC",
+    "coinbase": null
+  },
+  "DOGE": {
+    "binance": "DOGE/USDT:USDT",
+    "bybit": "DOGE/USDC:USDC",
+    "okx": "DOGE/USDT:USDT",
+    "hyperliquid": "DOGE/USDC:USDC",
+    "coinbase": "DOGE/USDC:USDC"
+  },
+  "MATIC": {
+    "binance": "MATIC/BNB",
+    "bybit": null,
+    "okx": null,
+    "hyperliquid": "MATIC/USDC:USDC",
+    "coinbase": "MATIC/USD"
+  },
+  "LINK": {
+    "binance": "LINK/USDT:USDT",
+    "bybit": "LINK/USDC:USDC",
+    "okx": "LINK/USDT:USDT",
+    "hyperliquid": "LINK/USDC:USDC",
+    "coinbase": "LINK/USDC:USDC"
+  },
+  "SHIB": {
+    "binance": "SHIB/USDT",
+    "bybit": "SHIB/USDT",
+    "okx": "SHIB/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "SHIB/USDC"
+  },
+  "ATOM": {
+    "binance": "ATOM/USDT:USDT",
+    "bybit": "ATOM/USDT:USDT",
+    "okx": "ATOM/USDT:USDT",
+    "hyperliquid": "ATOM/USDC:USDC",
+    "coinbase": "ATOM/USDC:USDC"
+  },
+  "FTM": {
+    "binance": "FTM/USDT:USDT",
+    "bybit": null,
+    "okx": null,
+    "hyperliquid": "FTM/USDC:USDC",
+    "coinbase": null
+  },
+  "NEAR": {
+    "binance": "NEAR/USDT:USDT",
+    "bybit": "NEAR/USDT:USDT",
+    "okx": "NEAR/USDT:USDT",
+    "hyperliquid": "NEAR/USDC:USDC",
+    "coinbase": "NEAR/USDC:USDC"
+  },
+  "BCH": {
+    "binance": "BCH/USDT:USDT",
+    "bybit": "BCH/USDC:USDC",
+    "okx": "BCH/USDT:USDT",
+    "hyperliquid": "BCH/USDC:USDC",
+    "coinbase": "BCH/USDC:USDC"
+  },
+  "ALGO": {
+    "binance": "ALGO/USDT:USDT",
+    "bybit": "ALGO/USDT:USDT",
+    "okx": "ALGO/USDT:USDT",
+    "hyperliquid": "ALGO/USDC:USDC",
+    "coinbase": "ALGO/USDC:USDC"
+  },
+  "MANA": {
+    "binance": "MANA/USDT:USDT",
+    "bybit": "MANA/USDT:USDT",
+    "okx": "MANA/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "MANA/USD"
+  },
+  "GRT": {
+    "binance": "GRT/USDT:USDT",
+    "bybit": "GRT/USDT:USDT",
+    "okx": "GRT/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "GRT/USDC:USDC"
+  },
+  "OP": {
+    "binance": "OP/USDT:USDT",
+    "bybit": "OP/USDC:USDC",
+    "okx": "OP/USDT:USDT",
+    "hyperliquid": "OP/USDC:USDC",
+    "coinbase": "OP/USDC:USDC"
+  },
+  "FTT": {
+    "binance": "FTT/USDT:USDT",
+    "bybit": "FTT/USDT",
+    "okx": null,
+    "hyperliquid": "FTT/USDC:USDC",
+    "coinbase": null
+  },
+  "IMX": {
+    "binance": "IMX/USDT:USDT",
+    "bybit": "IMX/USDT:USDT",
+    "okx": "IMX/USDT:USDT",
+    "hyperliquid": "IMX/USDC:USDC",
+    "coinbase": "IMX/USDC:USDC"
+  },
+  "APE": {
+    "binance": "APE/USDT:USDT",
+    "bybit": "APE/USDT:USDT",
+    "okx": "APE/USDT:USDT",
+    "hyperliquid": "APE/USDC:USDC",
+    "coinbase": "APE/USDC:USDC"
+  },
+  "SUI": {
+    "binance": "SUI/USDT:USDT",
+    "bybit": "SUI/USDC:USDC",
+    "okx": "SUI/USDT:USDT",
+    "hyperliquid": "SUI/USDC:USDC",
+    "coinbase": "SUI/USDC:USDC"
+  },
+  "LDO": {
+    "binance": "LDO/USDT:USDT",
+    "bybit": "LDO/USDT:USDT",
+    "okx": "LDO/USDT:USDT",
+    "hyperliquid": "LDO/USDC:USDC",
+    "coinbase": "LDO/USDC:USDC"
+  },
+  "CELO": {
+    "binance": "CELO/USDT:USDT",
+    "bybit": "CELO/USDT:USDT",
+    "okx": "CELO/USDT:USDT",
+    "hyperliquid": "CELO/USDC:USDC",
+    "coinbase": "CELO/USDC:USDC"
+  },
+  "AXS": {
+    "binance": "AXS/USDT:USDT",
+    "bybit": "AXS/USDT:USDT",
+    "okx": "AXS/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "AXS/USDC:USDC"
+  },
+  "DYDX": {
+    "binance": "DYDX/USDT:USDT",
+    "bybit": "DYDX/USDT:USDT",
+    "okx": "DYDX/USDT:USDT",
+    "hyperliquid": "DYDX/USDC:USDC",
+    "coinbase": "DYDX/USDC:USDC"
+  },
+  "MKR": {
+    "binance": "MKR/USDT:USDT",
+    "bybit": null,
+    "okx": null,
+    "hyperliquid": "MKR/USDC:USDC",
+    "coinbase": "MKR/USD"
+  },
+  "SNX": {
+    "binance": "SNX/USDT:USDT",
+    "bybit": "SNX/USDT:USDT",
+    "okx": "SNX/USDT:USDT",
+    "hyperliquid": "SNX/USDC:USDC",
+    "coinbase": "SNX/USDC:USDC"
+  },
+  "RUNE": {
+    "binance": "RUNE/USDT:USDT",
+    "bybit": "RUNE/USDT:USDT",
+    "okx": null,
+    "hyperliquid": "RUNE/USDC:USDC",
+    "coinbase": "RUNE/USDC:USDC"
+  },
+  "ZIL": {
+    "binance": "ZIL/USDT:USDT",
+    "bybit": "ZIL/USDT:USDT",
+    "okx": "ZIL/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": null
+  },
+  "EOS": {
+    "binance": "EOS/ETH",
+    "bybit": null,
+    "okx": null,
+    "hyperliquid": null,
+    "coinbase": "EOS/USD"
+  },
+  "CRV": {
+    "binance": "CRV/USDT:USDT",
+    "bybit": "CRV/USDC:USDC",
+    "okx": "CRV/USDT:USDT",
+    "hyperliquid": "CRV/USDC:USDC",
+    "coinbase": "CRV/USDC:USDC"
+  },
+  "QTUM": {
+    "binance": "QTUM/USDT:USDT",
+    "bybit": "QTUM/USDT:USDT",
+    "okx": "QTUM/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": null
+  },
+  "ENJ": {
+    "binance": "ENJ/USDT:USDT",
+    "bybit": "ENJ/USDT:USDT",
+    "okx": "ENJ/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": null
+  },
+  "BAT": {
+    "binance": "BAT/USDT:USDT",
+    "bybit": "BAT/USDT:USDT",
+    "okx": "BAT/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "BAT/USDC"
+  },
+  "STX": {
+    "binance": "STX/USDT:USDT",
+    "bybit": "STX/USDT:USDT",
+    "okx": "STX/USDT:USDT",
+    "hyperliquid": "STX/USDC:USDC",
+    "coinbase": "STX/USDC:USDC"
+  },
+  "CHZ": {
+    "binance": "CHZ/USDT:USDT",
+    "bybit": "CHZ/USDT:USDT",
+    "okx": "CHZ/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "CHZ/USDC"
+  },
+  "HT": {
+    "binance": null,
+    "bybit": null,
+    "okx": null,
+    "hyperliquid": null,
+    "coinbase": null
+  },
+  "HYPE": {
+    "binance": "HYPE/USDT:USDT",
+    "bybit": "HYPE/USDC:USDC",
+    "okx": "HYPE/USDT:USDT",
+    "hyperliquid": "HYPE/USDC:USDC",
+    "coinbase": "HYPE/USDC:USDC"
+  },
+  "GMT": {
+    "binance": "GMT/USDT:USDT",
+    "bybit": "GMT/USDT:USDT",
+    "okx": "GMT/USDT:USDT",
+    "hyperliquid": "GMT/USDC:USDC",
+    "coinbase": "GMT/USDC:USDC"
+  },
+  "XLM": {
+    "binance": "XLM/USDT:USDT",
+    "bybit": "XLM/USDC:USDC",
+    "okx": "XLM/USDT:USDT",
+    "hyperliquid": "XLM/USDC:USDC",
+    "coinbase": "XLM/USDC:USDC"
+  },
+  "THETA": {
+    "binance": "THETA/USDT:USDT",
+    "bybit": "THETA/USDT:USDT",
+    "okx": "THETA/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "THETA/USDC:USDC"
+  },
+  "FLOW": {
+    "binance": "FLOW/USDT:USDT",
+    "bybit": "FLOW/USDT:USDT",
+    "okx": "FLOW/USDT:USDT",
+    "hyperliquid": null,
+    "coinbase": "FLOW/USDC:USDC"
+  },
+  "XEM": {
+    "binance": "XEM/USDT:USDT",
+    "bybit": "XEM/USDT:USDT",
+    "okx": null,
+    "hyperliquid": null,
+    "coinbase": null
+  },
+  "VET": {
+    "binance": "VET/USDT:USDT",
+    "bybit": "VET/USDT:USDT",
+    "okx": null,
+    "hyperliquid": null,
+    "coinbase": "VET/USDC:USDC"
+  }
+}
