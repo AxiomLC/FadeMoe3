@@ -1,0 +1,29 @@
+{
+  "version": "2025-09-18-initial",
+  "indicators": [
+    {"id": "oi_delta_5m_pct", "weight": 1.2, "thresh": 0.06},
+    {"id": "depth_imbalance", "weight": 1.0, "thresh": 0.5},
+    {"id": "taker_imbalance_abs", "weight": 0.9, "thresh": 0.4},
+    {"id": "liquidations_5m_value", "weight": 1.1, "thresh_scale": "by_avg_vol"},
+    {"id": "funding_delta_1h_abs", "weight": 0.7, "thresh": 0.0008},
+    {"id": "mark_premium_zscore", "weight": 0.6, "thresh": 1.8},
+    {"id": "recent_1m_wick_flag", "weight": 1.0, "thresh": 1}
+  ],
+  "score_thresholds": {
+    "tier3": 0.7,
+    "tier2": 1.0,
+    "tier1": 1.4
+  },
+  "normalization": "zscore_per_symbol",
+  "alert_cooldown_seconds": 300,
+  "exchanges": {
+    "primary": "binance",
+    "secondary": ["bybit", "okx"],
+    "aggregator": "coinglass"
+  },
+  "timing": {
+    "data_collection_interval": 60000,
+    "orderbook_snapshot_interval": 15000,
+    "alert_evaluation_interval": 300000
+  }
+}
